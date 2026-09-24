@@ -11,7 +11,7 @@ jobs:
         run: date
       - name: Show operating system
         run: uname -a
-jobs:
+
   hello1:
     runs-on: ubuntu-latest
     steps:
