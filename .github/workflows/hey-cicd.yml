@@ -11,3 +11,13 @@ jobs:
         run: date
       - name: Show operating system
         run: uname -a
+jobs:
+  hello1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "Hello from GitHub Actions 1!"
+      - name: Show date
+        run: date
+      - name: Show operating system
+        run: uname -a
