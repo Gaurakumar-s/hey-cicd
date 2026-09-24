@@ -1,6 +1,9 @@
 name: Hello GitHub Actions
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - feature/*
 
 jobs:
   hello:
@@ -13,11 +16,11 @@ jobs:
       - name: Show operating system
         run: uname -a
 
-  hello1:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Print message
-        run: echo "Hello from GitHub Actions 1!"
+        run: echo "Hello from GitHub Actions!"
       - name: Show date
         run: date
       - name: Show operating system
